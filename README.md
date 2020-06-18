@@ -32,8 +32,6 @@ Caso não consiga resolver alguma das tarefas explique as dificuldades encontrad
 
 ---
 
-<img alt="Velha" src="https://github.com/gislainejessica/jogodavelha/blob/master/jogo.png" />
-
 
 # Jogo da Velha
 > Utilizando a biblioteca do React.
