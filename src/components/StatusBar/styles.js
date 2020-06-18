@@ -8,16 +8,7 @@ export const Container = styled.div`
   color: #e4e4e5;
   padding: 10px;
 
-  h2 {
-    margin-top: 25px;
-    color: ${props => props.tema === false ? '#091b28' : '#e4e4e5'};
-    font-size: 30px;
-    span {
-      color: #f41142;
-      font-weight: bold;
-      font-size: 30px;
-    }
-  }
+
 
   button {
     background:#f41142;
@@ -25,5 +16,5 @@ export const Container = styled.div`
     padding: 10px;
     border-radius: 5px;
     margin-top: 35px;
-  }
+   
 `;

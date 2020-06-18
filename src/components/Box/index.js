@@ -8,7 +8,7 @@ export default function Box({ children, index, cor }) {
   const dispatch = useDispatch()
 
   function handleClick(index){
-    console.log("Cor Box => ", cor)
+   // console.log("Cor Box => ", cor)
     dispatch(updateGameBoardSuccess(index))
   }
 

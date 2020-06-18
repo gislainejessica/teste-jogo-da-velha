@@ -1,3 +1,4 @@
+// import statusbar from '../components/StatusBar';
 export function Verifica(tabuleiro) {
   const seguenciaVencedora = [
     [0, 1, 2],
@@ -11,6 +12,7 @@ export function Verifica(tabuleiro) {
   ]
   for (let i = 0; i < seguenciaVencedora.length; i++) {
     const [a, b, c] = seguenciaVencedora[i];
+    
     if (tabuleiro[a] !== " "){
       if (tabuleiro[a] && tabuleiro[a] === tabuleiro[b] && tabuleiro[a] === tabuleiro[c]) {
         return seguenciaVencedora[i]

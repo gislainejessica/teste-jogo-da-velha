@@ -7,5 +7,6 @@ export const Container = styled.div`
   align-self: auto;
   
   height: 100%;
-  background: ${props => (props.theme === true ? '#091b28 ': '#e4e4e5')}; 
+// proprieda que altera Cor do fundo 
+  background: ${props => (props.theme === true ? '#100311': '#FFDEAD')}; 
 `;
