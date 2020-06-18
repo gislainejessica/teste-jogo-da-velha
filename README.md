@@ -30,11 +30,7 @@ Caso não consiga resolver alguma das tarefas explique as dificuldades encontrad
 
 - [ ] 6) Faça uma pull request nesse repositório ou mande o link com a solução 
 
-
 ---
-
-
-## Uma breve desmostração da aplicação 
 
 <img alt="Velha" src="https://github.com/gislainejessica/jogodavelha/blob/master/jogo.png" />
 
