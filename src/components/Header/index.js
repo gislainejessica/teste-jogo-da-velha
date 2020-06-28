@@ -12,7 +12,6 @@ export default function Header() {
   return (
     <Container tema={tema}>
       <img src={tema ? logo : light} alt="Jogo da Velha"/>
-    
       <Button tema={tema}/>
     </Container>
   );

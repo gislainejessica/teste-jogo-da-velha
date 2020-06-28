@@ -10,7 +10,9 @@ export default function GameBoard() {
   const [draw, setDraw] = useState([])
   const tabuleiro = useSelector(state => state.round.tabuleiro)
   const tema = useSelector(state => state.theme.cor)
-
+  const index = useSelector(state => state.round.next)
+  const proximo = useSelector(state => state.round.valores[index])
+  const [venceu, setVenceu] = useState([])
   useEffect(()=>{
     setDraw(Array(9).fill(false))
   },[])
@@ -25,6 +27,14 @@ export default function GameBoard() {
   // Ganhador consagrado \o/
   useEffect(()=> {
     setDraw(Desenha(tabuleiro, winner))
+    //Exibe mensagem que alguém ganhou.
+    if(winner.length === 3){
+      setVenceu('Você Ganhou !!!');
+      setTimeout(() => {
+        document.location.reload()
+      }, 2000);
+      
+    }
   },[tabuleiro, winner])
 
   
@@ -38,10 +48,13 @@ export default function GameBoard() {
 
   return (
     <Container tema={tema}>
+            <h2> Vez do jogador <span> { proximo }</span> </h2>
+
       <Tabuleiro> 
         {tabuleiro.map((valor, index) => renderBox(valor, index, draw))}     
       </Tabuleiro>
+      <h2>{venceu}</h2>
     </Container>
   );
 }
-//       <h1> Vamos Jogar? </h1>
+
