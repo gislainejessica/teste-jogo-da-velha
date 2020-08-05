@@ -88,4 +88,4 @@ Caso não consiga resolver alguma das tarefas explique as dificuldades encontrad
 - `yarn start` ou `npm start`.
 
 **Site no ZEIT**
-https://jogodavelha-rho-three.now.sh/
+https://angry-nightingale-f26582.netlify.app/
