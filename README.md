@@ -1,4 +1,4 @@
-## Teste Dev Udna
+## Teste de conhecimento em React
 
 - [x] 0)  Fazer um fork ou clone do projeto e rodar o projeto localmente
 
